@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
+
+
+body{
+    padding-top: 10px;
+    position: relative;
+    font-family: 'Kaushan Script', cursive;
+    cursor: url("../images/chopsticks-open.png"), grab;
+
+}
+
+body:active{
+    cursor: url("../images/chopsticks-close.png"), grab;
+}
+
+body::after{
+    background: url("../images/body-background.jpg");
+    content: "";    
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;     
+    background-size: cover;
+    z-index: -2;
+}
+
+.header{
+    height: 150px;
+    margin-top: -20px;
+    font-size: 3em;
+    color: #261a0d;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.menu-area{
+    padding: 20px 0 0 0;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.menu-box{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    color: #392613;
+}
+
+
+.game-board{
+    position: relative;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;    
+}
+
+.game-board::after{
+    margin-top: 25px;
+    background: url("../images/hat.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: "";    
+    opacity: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;     
+    z-index: -1;
+}
+
+.game-controls{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    cursor: pointer;
+}
+
+.btn-gameplay{
+    background-color:rgba(255, 255, 255, 0.8);
+    color: black;
+    border: 3px solid #4CAF50;
+    border-radius: 18px;
+    padding: 15px 25px 15px 25px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1em;
+    color: #392613;
+    cursor: pointer;
+}
+
+
+.message-gameover{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: block;
+    font-size: 2.5em;
+    color: #392613;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding-bottom: 10px;
+}
+
+.plate-box {
+    background: url("../images/banana-leaf-plate.png");
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.1);    
+}
+
+.plate-box{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    z-index: 9999;
+}
+
+.plate-container{
+    display: flex;    
+    justify-content: center;
+}
+
+.food-box {
+    height: 200px;
+    width: 200px;
+    background-image: url("../images/banhtrangtron.png");
+    background-size: cover;  
+    display: none;
+}
+
+.food-box:active{
+    cursor: url("../images/eating.png"), grab;
+}
+
+.avoid-clicks {
+    border: none;
+  }
+
+.game-area-containter{
+    justify-content: center;
+    width: 100%;
+    
+    
+}
+
+.food-gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.food-image img{    
+    width: 60%;
+}
+
+.food-name{
+    margin-top: 0;
+    
+    font-size: 1.5em;
+    color: #392613;
+}
+
+.footer{
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #392613;
+    text-align: center;
+    padding: 5px;
+    font-size: 1em;
+}
+
+@media only screen and (max-width: 400px)  {
+
+    .header{
+        font-size: 2.5em;
+        margin-bottom: 20px;
+    }
+
+    .plate-box{
+        height: 100px;
+        width: 100px;
+        background: url("../images/banana-leaf-plate.png");
+        background-size: contain;
+    }
+
+    .food-box {
+        height: 100px;
+        width: 100px;
+        background-image: url("../images/banhtrangtron.png");
+        background-size: contain;  
+    }
+}
+
+
+

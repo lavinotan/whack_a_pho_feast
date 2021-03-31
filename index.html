@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Whack A Pho Feast</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+<audio id="sound">
+    <source src="sounds/Recording.m4a" type="audio/mpeg">
+</audio>
+<div class="header">
+    <p>Whack A Pho Feast</p>    
+</div>
+<div class="menu-area">
+    <div class="menu-box">
+        <div class="game-board">
+            <div>
+            <p>Current Score:</p>
+            <p id="scoreBoard">0</p>
+            </div>
+        </div>
+        <div class="game-controls">
+            <div>
+            <button class="btn-gameplay">Start Game</button>
+            </div>
+            <div>
+                <p>Timer: </p>
+                <p id="timeBoard">0 &nbsp; s</p>
+            </div>
+            
+        </div>
+        <div class="game-board">
+            <div>
+            <p>Highest Score:</p>        
+            <p id="highest-score">0</p>
+            </div>        
+        </div>        
+    </div>    
+</div>
+<div class="message-gameover">
+</div>
+<div class="game-area-containter">
+    <div class="plate-container">
+        <div class="plate-box plate" id="testPlate">
+            <div class="food-box">
+            </div>       
+        </div>
+        <div class="plate-box">
+            <div class="food-box">
+            </div>
+        </div>
+        <div class="plate-box">
+            <div class="food-box">
+            </div>
+        </div>        
+    </div>
+    <div class="plate-container">
+        <div class="plate-box plate" id="testPlate">
+            <div class="food-box">
+            </div>       
+        </div>
+        <div class="plate-box">
+            <div class="food-box">
+            </div>
+        </div>
+        <div class="plate-box">
+            <div class="food-box">
+            </div>
+        </div>        
+    </div>
+    <div class="plate-container">
+        <div class="plate-box plate" id="testPlate">
+            <div class="food-box">
+            </div>       
+        </div>
+        <div class="plate-box">
+            <div class="food-box">
+            </div>
+        </div>
+        <div class="plate-box">
+            <div class="food-box">
+            </div>
+        </div>        
+    </div>
+</div>
+<div class="food-gallery">
+    <div class="food-image">
+        <img src="images/banhmi.png" alt="banh mi"/>
+        <p class="food-name">Banh Mi</p>
+    </div >
+    <div class="food-image">
+        <img src="images/banhcuon.png" alt="banh cuon"/>
+        <p class="food-name">Banh Cuon</p>
+    </div>
+    <div class="food-image">
+        <img src="images/banhtrangtron.png" alt="banh trang tron"/>
+        <p class="food-name">Banh Trang Tron</p>
+    </div>
+    <div class="food-image">
+        <img src="images/bunbohue.png" alt="bun bo hue"/>
+        <p class="food-name">Bun Bo Hue</p>
+    </div>
+    
+</div>
+
+<div class="footer">
+        <p>2020 &copy; Lavino Tân &hearts; Ying</p>
+</div>
+
+<script src="scripts/jquery-3.4.1.min.js"></script>
+<script src="scripts/script.js"></script>
+
+</body>
+
+    
+</html>
