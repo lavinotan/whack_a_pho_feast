@@ -3,9 +3,9 @@ Whack a Pho Feast is a simple "Whack a Mole" game developed with HTML5, CSS, Jav
 
 # Instructions
 Play on [http://whackaphogame.great-site.net/](http://whackaphogame.great-site.net/) or
-..1. Download
-..2. Extract
-..3. Open the index.html on Chrome, FireFox, or Safari
+1. Download
+2. Extract
+3. Open the index.html on Chrome, FireFox, or Safari
 
 # Demo 
 ![alt text](https://github.com/lavinotan/whack_a_pho_feast/blob/8d540508be942b04247086f9d17d65d40682546b/whack_a_pho_demo.gif "Game demo")
